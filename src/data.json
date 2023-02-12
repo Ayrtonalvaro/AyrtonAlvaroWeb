@@ -1,0 +1,78 @@
+{
+  "user": [
+    {
+      "name": "Ayrton Alvaro...",
+      "profession": "Web developer",
+      "mail": "Ayrtonalvaro1973@gmail.com",
+      "description": "Bienvenidos a mi porfolio, soy un programador jr front end con algunos conocimientos sobre el back end, siempre estoy intentando aprender y descubrir nuevas tecnologias para implemnetar a los proyectos que realizo.Soy de Argentina de la provincia de Buenos Aires tengo 26 años te invito a saber mas de mi en las siguientes secciones.En mis tiempos libres soy guitarrista😁",
+      "linksSocial": {
+        "gitHub": "https://github.com/Ayrtonalvaro",
+        "linkedIn": "https://www.linkedin.com/in/ayrton-alvaro-320a9424a/",
+        "instagram": "https://www.instagram.com/ayrtonalvaro/?hl=es-la",
+        "twitter": "https://twitter.com/ayrtonalvaro"
+      }
+    }
+  ],
+  "skills": [
+    {
+      "language": "html"
+    },
+    {
+      "language": "Css"
+    },
+    {
+      "language": "JavaScript"
+    },
+    {
+      "language": "TypeScript"
+    },
+    {
+      "language": "java"
+    }
+  ],
+  "framewokrs": [
+    { "nameFramework": "React" },
+    { "nameFramework": "Angular" },
+    { "nameFramework": "Spring Boot" },
+    { "nameFramework": "Tailwindcss" },
+    { "nameFramework": "Bootstrap" }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "nameProject": "Divi Films",
+      "linkGitHub": "https://github.com/Ayrtonalvaro/divi-films",
+      "linkDeploy": ""
+    },
+    {
+      "id": 2,
+      "nameProject": "Space tourism",
+      "linkGitHub": "https://github.com/Ayrtonalvaro/Space-world",
+      "linkDeploy": "https://space-turism-b5b84.firebaseapp.com/Destination"
+    },
+    {
+      "id": 3,
+      "nameProject": "E-shop",
+      "linkGitHub": "https://github.com/Ayrtonalvaro/Coder-ecommerce",
+      "linkDeploy": "https://backende-shop.firebaseapp.com/"
+    },
+    {
+      "id": 4,
+      "nameProject": "Supermark List",
+      "linkGitHub": "https://github.com/Ayrtonalvaro/SupermarketList.github.io",
+      "linkDeploy": "https://supermark-list.firebaseapp.com/"
+    },
+    {
+      "id": 5,
+      "nameProject": "Rick and Morty",
+      "linkGitHub": "",
+      "linkDeploy": ""
+    },
+    {
+      "id": 6,
+      "nameProject": "Sneakers commerce",
+      "linkGitHub": "",
+      "linkDeploy": ""
+    }
+  ]
+}
