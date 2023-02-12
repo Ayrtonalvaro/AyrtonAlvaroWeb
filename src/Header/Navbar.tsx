@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link } from 'react-scroll'
+import {  Link } from 'react-scroll'
 
 import ButtonSwitch from '../components/ButtonSwitch'
 import Logo from '../components/Logo'
@@ -45,9 +45,9 @@ const Navbar = () => {
     >
       <nav className="lg:flex lg:justify-around  ">
         <div className="cursor-pointer ">
-          <a href={`/`}>
+          <Link to="home" smooth={true} offset={-100} duration={80}>
             <Logo />
-          </a>
+          </Link>
         </div>
         <div
           className="text-3xl absolute right-5 top-7 cursor-pointer lg:hidden"
@@ -66,7 +66,12 @@ const Navbar = () => {
           {links.map(link => {
             return (
               <div key={link.name}>
-                <Link to={`${link.to}`}>
+                <Link
+                  to={`${link.to}`}
+                  smooth={true}
+                  offset={-100}
+                  duration={80}
+                >
                   <NavbarLinks name={link.name} />
                 </Link>
               </div>
