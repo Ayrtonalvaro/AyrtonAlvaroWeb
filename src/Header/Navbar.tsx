@@ -1,39 +1,39 @@
-import { useState } from 'react';
-import { Link } from 'react-scroll';
+import { useState } from 'react'
+import { Link } from 'react-scroll'
 
-import ButtonSwitch from '../components/ButtonSwitch';
-import Logo from '../components/Logo';
-import NavbarLinks from '../components/NavbarLinks';
+import ButtonSwitch from '../components/ButtonSwitch'
+import Logo from '../components/Logo'
+import NavbarLinks from '../components/NavbarLinks'
 
 const Navbar = () => {
   interface Link {
-    name: string;
-    to: string;
+    name: string
+    to: string
   }
 
   const links: Link[] = [
     { name: 'Sobre mi', to: 'sobremi' },
     { name: 'Proyectos', to: 'proyects' },
-    { name: 'Contactos', to: 'contact' },
-  ];
+    { name: 'Contactos', to: 'contact' }
+  ]
 
-  const [open, setOpen] = useState<boolean>(false);
+  const [open, setOpen] = useState<boolean>(false)
 
-  const [navbarColor, setNavbarColor] = useState<boolean>(false);
+  const [navbarColor, setNavbarColor] = useState<boolean>(false)
 
   const changeBackground = () => {
     if (window.scrollY >= 10) {
-      setNavbarColor(true);
+      setNavbarColor(true)
     } else {
-      setNavbarColor(false);
+      setNavbarColor(false)
     }
-  };
+  }
 
-  window.addEventListener('scroll', changeBackground);
+  window.addEventListener('scroll', changeBackground)
 
   const handleOpen = () => {
-    setOpen(!open);
-  };
+    setOpen(!open)
+  }
 
   return (
     <div
@@ -45,7 +45,9 @@ const Navbar = () => {
     >
       <nav className="lg:flex lg:justify-around  ">
         <div className="cursor-pointer ">
-          <Logo />
+          <a href={`/`}>
+            <Logo />
+          </a>
         </div>
         <div
           className="text-3xl absolute right-5 top-7 cursor-pointer lg:hidden"
@@ -64,17 +66,17 @@ const Navbar = () => {
           {links.map(link => {
             return (
               <div key={link.name}>
-                  <a href={`#${link.to}`}>
-                    <NavbarLinks name={link.name} />
-                  </a>
+                <Link to={`${link.to}`}>
+                  <NavbarLinks name={link.name} />
+                </Link>
               </div>
-            );
+            )
           })}
           <ButtonSwitch />
         </ul>
       </nav>
     </div>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
